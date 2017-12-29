@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+.loader {
+  height: 100vh;
+  background: linear-gradient(purple, #b7447a);
+  display: flex;
+  align-items: center;
+}
+.init {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/images/drive.jpg);
+}
+.vh-33 {
+  height: 33vh;
+}
+.button {
+  height: 60px;
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  float: left;
+  text-align: center;
+  line-height:60px;
+  margin-right: 5px;
+  margin-top: 28%;
+}
+.width-80 {
+  min-width: 80px;
+}
+
+.margin-align {
+  margin: 20px 0;
+}
+.option {
+  border: none;
+  width: 80px;
+  border-radius: 4px;
+}
