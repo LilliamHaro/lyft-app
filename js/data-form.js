@@ -27,7 +27,7 @@ $(document).ready(function() {
     if ($(this).val().length >= 2) {
       opLastName = true;
     } else {
-      pLastName = false;
+      opLastName = false;
     }
     activeFinalButton();
   });
