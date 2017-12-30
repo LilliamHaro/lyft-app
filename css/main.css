@@ -54,9 +54,9 @@
   color: #fff;
 }
 .mini-input {
-  width: 20px;
+  width: 50px;
   border: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px dashed #000;
   outline: none;
   text-align: center;
 }

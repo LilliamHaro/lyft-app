@@ -6,15 +6,18 @@ $(document).ready(function() {
     var flag = $(this).attr('src');
     $('#flag').attr('src', flag);
     var code = ($(this).data('code'));
+    localStorage.setItem('cod', code);
     $('#code').text(code);
     $('#phone').prop('disabled', false);
     $('#phone').focus();
   });
   // funcion para habilitar el boton next
-  $('#phone').on('keydown', function(event) {
-    if ($(this).val().length >= 9) {
+  $('#phone').on('keyup', function(event) {
+    if ($(this).val().length >= 10) {
       $('#next').attr('disabled', false);
       $('#next').addClass('bg-magenta');
+      var number = $('#phone').val();
+      localStorage.setItem('num', number);
     } else {
       $('#next').attr('disabled', true);
       $('#next').removeClass('bg-magenta');
@@ -32,6 +35,8 @@ $(document).ready(function() {
     // guardando el numero random en el localstrage para usar este dato en la siguiente vista
     localStorage.setItem('code', random);
     alert('Tu código: LAB-' + random);
+    // limpiando input
+    $('#phone').val('');
     window.location.href = '../views/verify.html';
   });
 });

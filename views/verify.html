@@ -14,23 +14,21 @@
     <div class="height-90 pd-30">
       <h2 class="text-center margin-align ">Verify phone number</h2>
       <h4 class="text-center">Join for now free ride credit</h4>
-      <p class="text-center margin-align ">L A B - <input type="text" class="mini-input">
-        <input type="text"class="mini-input">
-        <input type="text"class="mini-input">
+      <p class="text-center margin-align ">L A B - <input id="input-code" type="tel" maxlength="3" class="mini-input">
       </p>
-      <p class=" text-center margin-align">Enter the code send to +52</p>
-      <button type="button" class="col-xs-offset-4 col-xs-4 btn btn-default"> resend code</button>
+      <p class=" text-center margin-align">Enter the code send to <span id="num"></span> </p>
+      <button id="resend" type="button" class="col-xs-offset-4 col-xs-4 btn btn-default"> resend code</button>
     </div>
     <div class="container">
       <div class="row">
-          <button type="button" class="col-xs-offset-1 col-xs-10 btn btn-default" disabled>NEXT</button>
+          <button id="verify" type="button" class="col-xs-offset-1 col-xs-10 btn btn-default" disabled>NEXT</button>
       </div>
     </div>
 
 <!--Import jQuery -->
   <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../js/sign-up.js"></script>
+  <script src="../js/verify.js"></script>
 
   </body>
 </html>
