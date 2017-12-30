@@ -40,14 +40,26 @@
 .margin-align {
   margin: 20px 0;
 }
+.pd-30 {
+  padding: 30px;
+}
 .code {
   width: 40px;
 }
-
 .width-80 img  {
   width: 30px;
 }
 .bg-magenta {
   background-color:magenta;
   color: #fff;
+}
+.mini-input {
+  width: 20px;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  text-align: center;
+}
+.height-90 {
+  height: 90vh;
 }
