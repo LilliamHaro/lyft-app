@@ -41,4 +41,7 @@ $(document).ready(function() {
   $('#verify').on('click', function(event) {
     window.location.href = '../views/data-form.html';
   });
+  $('#back-to-sign-up').on('click', function(event) {
+    window.location.href = '../views/sign-up.html';
+  });
 });

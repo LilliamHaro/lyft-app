@@ -39,4 +39,8 @@ $(document).ready(function() {
     $('#phone').val('');
     window.location.href = '../views/verify.html';
   });
+
+  $('#back-to-inicio').on('click', function(event) {
+    window.location.href = '../views/inicio.html';
+  });
 });

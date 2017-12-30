@@ -50,4 +50,8 @@ $(document).ready(function() {
       alert('Para continuar debe hacer aceptar los terminos y condiciones de lyft');
     }
   });
+
+  $('#back-to-verify').on('click', function(event) {
+    window.location.href = '../views/verify.html';
+  });
 });

@@ -78,3 +78,27 @@
 .text-blue {
   color: #1544D2;
 }
+.last-view {
+  height: 100vh;
+  background: linear-gradient(purple, #b7447a);
+}
+.div-icon {
+  display: block;
+}
+.icon {
+  font-size: 35px;
+}
+.flex-align {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.pd-left-20 {
+  padding-left: 20px;
+}
+.height-25 {
+  height: 25px;
+}
+.white {
+  color: #fff;
+}
