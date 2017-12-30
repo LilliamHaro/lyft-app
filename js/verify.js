@@ -39,6 +39,6 @@ $(document).ready(function() {
     });
   });
   $('#verify').on('click', function(event) {
-    window.location.href = '../views/verify.html';
+    window.location.href = '../views/data-form.html';
   });
 });

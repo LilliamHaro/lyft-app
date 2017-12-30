@@ -63,3 +63,18 @@
 .height-90 {
   height: 90vh;
 }
+.pd-left-0 {
+  padding-left: 0;
+}
+.pd-right-0 {
+  padding-right: 0;
+}
+.mg-top-20 {
+  margin-top: 20px;
+}
+.pd-top-25 {
+  padding-top: 25px;
+}
+.text-blue {
+  color: #1544D2;
+}
