@@ -1,6 +1,6 @@
 ## README
 1. **Descripcion del proyecto:**
-  - Este proyecto contiene un simulacion del app de lyft, siguiendo la ruta del sign-up (verificacion de número celular y registro de datos)
+  - Este proyecto contiene un simulacion del app de lyft, con una vista splash de 3 segundos y siguiendo la ruta del sign-up (verificacion de número celular y registro de datos)
 
 2. **Autor:**
 
@@ -14,6 +14,8 @@
   - Bootstrap
 
   **VISTA DE LA APLICACION EN ORDEN**
+
+![RECURSOS](assets/images/splash.png)
 
 ![RECURSOS](assets/images/app.png)
 
