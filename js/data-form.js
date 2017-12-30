@@ -1,26 +1,53 @@
 $(document).ready(function() {
-  var op1 = false;
-  var op2 = false;
-  var op3 = false;
+  var opName = false;
+  var opLastName = false;
+  var opEmail = false;
+  var opAgreed = false;
 
+  function activeFinalButton() {
+    if (opName === true && opLastName === true && opEmail === true) {
+      $('#final').attr('disabled', false);
+      $('#final').addClass('bg-magenta');
+    } else {
+      $('#final').attr('disabled', true);
+      $('#final').removeClass('bg-magenta');
+    }
+  }
 
-  // validando que no se ingresen numero como nombre
   $('#name').on('input', function(event) {
-
-
+    if ($(this).val().length >= 2) {
+      opName = true;
+    } else {
+      opName = false;
+    }
+    activeFinalButton();
   });
-  // validando que no se ingresen numero como nombre
-  $('#name').on('input', function(event) {
 
-  })
+  $('#last-name').on('input', function(event) {
+    if ($(this).val().length >= 2) {
+      opLastName = true;
+    } else {
+      pLastName = false;
+    }
+    activeFinalButton();
+  });
+
   // validando el Email
-  $('#email').on('input', function(event) {
+  $('#email').on('keyup', function(event) {
     var EMAILESTRUC = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,3}$/;
     if (EMAILESTRUC.test($(this).val())) {
-      op1 = true;
+      opEmail = true;
     } else {
-      op1 = false;
+      opEmail = false;
     }
-    return op1;
+    activeFinalButton();
+  });
+
+  $('#final').on('click', function(event) {
+    if ($('#agree').prop('checked')) {
+      window.location.href = '../views/last-view.html';
+    } else {
+      alert('Para continuar debe hacer aceptar los terminos y condiciones de lyft');
+    }
   });
 });
