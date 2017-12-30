@@ -19,38 +19,26 @@
         <div class="col-xs-offset-1 col-xs-10">
           <div class="input-group">
             <div class="input-group-btn">
-              <select  name="country" class="width-80 btn btn-default dropdown-toggle">
-                <option class=" btn btn-default" value=""><a href="#">Col</a></option>
-                <option class="btn btn-default" value=""><a href="#">Per</a></option>
-                <option class="btn btn-default" value=""><a href="#">USA</a></option>
-              </select>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="" alt="" id="flag"> <span class="caret"></span></button>
+              <ul class="dropdown-menu width-80">
+                <li><a href="#"><img src="../assets/images/peru-flag.jpg" alt="" data-code="+51"> </a></li>
+                <li><a href="#"><img src="../assets/images/colombia.png" alt="" data-code="+53"></a></li>
+                <li><a href="#"><img src="../assets/images/eeuu.png" alt="" data-code="01"></a></li>
+              </ul>
             </div><!-- /btn-group -->
-            <input type="tel" maxlength="12" class="form-control" aria-label="..." value=" ">
+            <span id="code" class="input-group-addon">Code</span>
+            <input id="phone" type="tel" maxlength="15" class="form-control" aria-label="..." value="">
           </div><!-- /input-group -->
         </div><!-- /.col-lg-6 -->
       </div><!-- /.row -->
-
-
-
-
-
       <p class="text-center margin-align">We'll send a text to verify your phone</p>
-
-     <button type="button" class=" col-xs-12 btn btn-default" disabled>NEXT</button>
-
-
-
-
-
-
+     <button id="next" type="button" class=" col-xs-12 btn btn-default" disabled>NEXT</button>
     </div>
 
-
-
-
-<!--Import jQuery -->
+<!--Important jQuery -->
   <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/app.js"></script>
+  <script src="../js/sign-up.js"></script>
+
   </body>
 </html>

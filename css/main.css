@@ -40,8 +40,14 @@
 .margin-align {
   margin: 20px 0;
 }
-.option {
-  border: none;
-  width: 80px;
-  border-radius: 4px;
+.code {
+  width: 40px;
+}
+
+.width-80 img  {
+  width: 30px;
+}
+.bg-magenta {
+  background-color:magenta;
+  color: #fff;
 }
